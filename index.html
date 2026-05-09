@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Golden Retire Memo — Financial News & Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ TOPBAR ============ -->
+  <div class="topbar">
+    <div class="ticker-viewport">
+      <div class="ticker-track" id="tickerTrack"></div>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <div class="header-wrap">
+    <header class="container header">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true"></span>
+        Golden Retire Memo
+      </a>
+      <nav class="nav">
+        <a href="trading-tools.html">Trading Tools</a>
+        <a href="about.html">About Us</a>
+      </nav>
+      <div class="header-right">
+        <button class="icon-btn" id="searchOpen" aria-label="Open search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="btn-primary">Subscribe</button>
+      </div>
+    </header>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <main class="container">
+    <section class="hero">
+      <img class="hero-img"
+           src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1600&q=80&auto=format&fit=crop"
+           alt="Wall Street street sign" />
+      <a href="article.html" class="hero-overlay" style="display:block;text-decoration:none;">
+        <span class="tag-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2h-5L4 14l6 6 9-9z"/><circle cx="15" cy="9" r="1"/></svg>
+          Macro
+        </span>
+        <h1 class="hero-headline">Federal Reserve Holds Rates Steady as Inflation <em>Cools</em> to 2.4%</h1>
+        <span class="arrow-btn" aria-label="Read story">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <div class="sub-cards">
+        <a href="article.html" class="sub-card">
+          <img class="sub-card-img" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&q=80&auto=format&fit=crop" alt="" />
+          <div class="sub-card-body">
+            <span class="tag-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+              Stocks
+            </span>
+            <span class="sub-card-title">S&amp;P Closes Above 6,000 — Crypto Treasuries Sit Near Records</span>
+          </div>
+        </a>
+        <a href="article.html" class="sub-card">
+          <img class="sub-card-img" src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=400&q=80&auto=format&fit=crop" alt="" />
+          <div class="sub-card-body">
+            <span class="tag-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 8h5a3 3 0 0 1 0 6H9V8zM9 14h6a3 3 0 0 1 0 6H9v-6z"/></svg>
+              Crypto
+            </span>
+            <span class="sub-card-title">Bitcoin Tops $80,000 as ETF Inflows Hit Record</span>
+          </div>
+        </a>
+        <a href="article.html" class="sub-card">
+          <img class="sub-card-img" src="https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?w=400&q=80&auto=format&fit=crop" alt="" />
+          <div class="sub-card-body">
+            <span class="tag-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 8h5a3 3 0 0 1 0 6H9V8zM9 14h6a3 3 0 0 1 0 6H9v-6z"/></svg>
+              Crypto
+            </span>
+            <span class="sub-card-title">Ethereum Staking Yields Climb After Pectra Upgrade Goes Live</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ TOP STORIES ============ -->
+    <section class="section">
+      <div class="section-eyebrow">
+        <span class="label">Top Stories</span>
+        <span class="descriptor">— this week</span>
+      </div>
+
+      <div class="stories-grid">
+        <article class="story-card">
+          <a href="article.html" style="display:contents;">
+            <div class="story-card-imgwrap">
+              <img class="story-card-img" src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=900&q=80&auto=format&fit=crop" alt="" />
+              <span class="arrow-btn" aria-label="Read story">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </span>
+            </div>
+            <div class="story-card-body">
+              <span class="tag-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V7a2 2 0 0 0-2-2h-5L4 14l6 6 9-9z"/></svg>
+                Macro
+              </span>
+              <h3 class="story-card-title">The Quiet Reshaping of the Treasury Market and Why Crypto Cares</h3>
+              <div class="story-card-meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  May 7, 2026
+                </span>
+                <span class="meta-divider"></span>
+                <span class="meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                  6 min read
+                </span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="story-card">
+          <a href="article.html" style="display:contents;">
+            <div class="story-card-imgwrap">
+              <img class="story-card-img" src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80&auto=format&fit=crop" alt="" />
+              <span class="arrow-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg></span>
+            </div>
+            <div class="story-card-body">
+              <span class="tag-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 8h5a3 3 0 0 1 0 6H9V8zM9 14h6a3 3 0 0 1 0 6H9v-6z"/></svg>
+                Stablecoins
+              </span>
+              <h3 class="story-card-title">Stablecoin Issuers Have Quietly Become Top US Treasury Buyers</h3>
+              <div class="story-card-meta">
+                <span class="meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> May 5, 2026</span>
+                <span class="meta-divider"></span>
+                <span class="meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 8 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="story-card">
+          <a href="article.html" style="display:contents;">
+            <div class="story-card-imgwrap">
+              <img class="story-card-img" src="https://images.unsplash.com/photo-1605792657660-596af9009e82?w=900&q=80&auto=format&fit=crop" alt="" />
+              <span class="arrow-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg></span>
+            </div>
+            <div class="story-card-body">
+              <span class="tag-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+                DeFi
+              </span>
+              <h3 class="story-card-title">A $290M Aave Exploit Quietly Reshapes DeFi Risk Pricing</h3>
+              <div class="story-card-meta">
+                <span class="meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> May 4, 2026</span>
+                <span class="meta-divider"></span>
+                <span class="meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 5 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="story-card">
+          <a href="article.html" style="display:contents;">
+            <div class="story-card-imgwrap">
+              <img class="story-card-img" src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=900&q=80&auto=format&fit=crop" alt="" />
+              <span class="arrow-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg></span>
+            </div>
+            <div class="story-card-body">
+              <span class="tag-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+                Stocks
+              </span>
+              <h3 class="story-card-title">AI Capex Hits a Record as Hyperscalers and Mining Stocks Lift the Tape</h3>
+              <div class="story-card-meta">
+                <span class="meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> May 2, 2026</span>
+                <span class="meta-divider"></span>
+                <span class="meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 7 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="story-card">
+          <a href="article.html" style="display:contents;">
+            <div class="story-card-imgwrap">
+              <img class="story-card-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format&fit=crop" alt="" />
+              <span class="arrow-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg></span>
+            </div>
+            <div class="story-card-body">
+              <span class="tag-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+                Mining
+              </span>
+              <h3 class="story-card-title">Bitcoin Hashrate Hits an All-Time High as Miners Bet on the Halving</h3>
+              <div class="story-card-meta">
+                <span class="meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Apr 30, 2026</span>
+                <span class="meta-divider"></span>
+                <span class="meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 4 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="story-card">
+          <a href="article.html" style="display:contents;">
+            <div class="story-card-imgwrap">
+              <img class="story-card-img" src="https://images.unsplash.com/photo-1554260570-9140fd3b7614?w=900&q=80&auto=format&fit=crop" alt="" />
+              <span class="arrow-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg></span>
+            </div>
+            <div class="story-card-body">
+              <span class="tag-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 9l7-7 7 7M5 15l7 7 7-7"/></svg>
+                Tokens
+              </span>
+              <h3 class="story-card-title">Inside the Token Launch That Lost $40 Billion in Market Cap Overnight</h3>
+              <div class="story-card-meta">
+                <span class="meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Apr 28, 2026</span>
+                <span class="meta-divider"></span>
+                <span class="meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 10 min read</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ MARKETS AT A GLANCE ============ -->
+    <section class="markets-panel">
+      <div class="markets-head">
+        <h2 class="markets-title">Markets at a <em>glance.</em></h2>
+        <p class="markets-sub">A snapshot of the world's benchmarks, updated continuously through the trading day.</p>
+      </div>
+      <div class="markets-grid">
+        <div class="market-cell"><span class="market-name">S&amp;P 500</span><span class="market-value">6,041.18</span><svg class="spark" viewBox="0 0 100 36" preserveAspectRatio="none"><path d="M0,28 L8,26 L16,24 L24,22 L32,18 L40,20 L48,16 L56,14 L64,15 L72,10 L80,12 L88,8 L100,6"/></svg><span class="market-change"><span class="ticker-arrow">▲</span> +0.62% · +37.41</span></div>
+        <div class="market-cell"><span class="market-name">NASDAQ</span><span class="market-value">19,584.7</span><svg class="spark" viewBox="0 0 100 36" preserveAspectRatio="none"><path d="M0,22 L10,18 L20,20 L30,14 L40,16 L50,10 L60,12 L70,8 L80,11 L90,6 L100,4"/></svg><span class="market-change"><span class="ticker-arrow">▲</span> +1.04% · +201.30</span></div>
+        <div class="market-cell"><span class="market-name">DOW JONES</span><span class="market-value">42,318.6</span><svg class="spark" viewBox="0 0 100 36" preserveAspectRatio="none"><path d="M0,12 L10,16 L20,14 L30,18 L40,16 L50,22 L60,20 L70,24 L80,22 L90,26 L100,28"/></svg><span class="market-change"><span class="ticker-arrow">▼</span> −0.18% · −76.21</span></div>
+        <div class="market-cell"><span class="market-name">FTSE 100</span><span class="market-value">8,402.91</span><svg class="spark" viewBox="0 0 100 36" preserveAspectRatio="none"><path d="M0,18 L10,14 L20,16 L30,12 L40,15 L50,11 L60,13 L70,9 L80,12 L90,8 L100,10"/></svg><span class="market-change"><span class="ticker-arrow">▲</span> +0.31% · +25.84</span></div>
+        <div class="market-cell"><span class="market-name">10Y TREASURY</span><span class="market-value">4.142%</span><svg class="spark" viewBox="0 0 100 36" preserveAspectRatio="none"><path d="M0,8 L10,12 L20,10 L30,14 L40,12 L50,16 L60,14 L70,18 L80,16 L90,20 L100,22"/></svg><span class="market-change"><span class="ticker-arrow">▼</span> −0.04 bps</span></div>
+        <div class="market-cell"><span class="market-name">BTC / USD</span><span class="market-value">80,412</span><svg class="spark" viewBox="0 0 100 36" preserveAspectRatio="none"><path d="M0,30 L8,26 L16,28 L24,20 L32,24 L40,16 L48,18 L56,12 L64,14 L72,8 L80,10 L88,4 L100,6"/></svg><span class="market-change"><span class="ticker-arrow">▲</span> +3.12% · +2,432</span></div>
+        <div class="market-cell"><span class="market-name">GOLD</span><span class="market-value">2,628.40</span><svg class="spark" viewBox="0 0 100 36" preserveAspectRatio="none"><path d="M0,16 L10,14 L20,18 L30,16 L40,12 L50,14 L60,10 L70,13 L80,8 L90,11 L100,7"/></svg><span class="market-change"><span class="ticker-arrow">▲</span> +0.47% · +12.30</span></div>
+        <div class="market-cell"><span class="market-name">EUR / USD</span><span class="market-value">1.0842</span><svg class="spark" viewBox="0 0 100 36" preserveAspectRatio="none"><path d="M0,14 L10,16 L20,12 L30,18 L40,14 L50,20 L60,16 L70,22 L80,18 L90,24 L100,20"/></svg><span class="market-change"><span class="ticker-arrow">▼</span> −0.22%</span></div>
+      </div>
+    </section>
+
+    <!-- ============ SUBSCRIBE ============ -->
+    <section class="subscribe">
+      <div>
+        <button class="subscribe-badge">Subscribe</button>
+        <h2 class="subscribe-title">Crypto, markets, and the stories <em>moving digital assets.</em></h2>
+        <p class="subscribe-copy">Get Golden Retire Memo's daily roundup of crypto, DeFi, and macro news from our editorial team. Free, and you can unsubscribe at any time.</p>
+        <div class="input-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <input type="email" placeholder="your@email.com" aria-label="Email address" />
+          <button class="btn-primary" disabled aria-disabled="true">Subscribe</button>
+        </div>
+        <label class="checkbox-row">
+          <input type="checkbox" />
+          <span>I agree to receive newsletters and promotional emails from Golden Retire Memo. I have read and accept the <a href="#">Privacy Policy</a>.</span>
+        </label>
+        <p class="subscribe-disclaimer">We send daily newsletters covering crypto, markets, and DeFi. Some emails include offers from advertising partners.</p>
+      </div>
+      <div class="subscribe-image">
+        <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?w=1000&q=80&auto=format&fit=crop" alt="A stack of newspapers" />
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ NEW FOOTER ============ -->
+  <footer class="container">
+    <div class="site-footer">
+      <div class="footer-cta">
+        <div>
+          <div class="footer-eyebrow">The Morning Memo</div>
+          <h2 class="footer-headline">Stay informed on the <em>digital assets</em> that move.</h2>
+        </div>
+        <div class="footer-form-block">
+          <div class="input-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" />
+            <button class="btn-primary" disabled aria-disabled="true">Subscribe</button>
+          </div>
+          <label class="footer-form-checkbox">
+            <input type="checkbox" />
+            <span>I agree to receive newsletters and promotional emails from Golden Retire Memo. I have read and accept the <a href="#">Privacy Policy</a>.</span>
+          </label>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <a href="index.html" class="footer-mark-row">
+          <span class="logo-mark logo-mark--on-dark" aria-hidden="true"></span>
+          Golden Retire Memo
+        </a>
+        <ul class="footer-legal-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trading-tools.html">Trading Tools</a></li>
+        </ul>
+        <span class="footer-copyright">© 2026 GoldenRetireMemo.com — operated by TerraTrance Technologies, LLC. All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIM + SEARCH OVERLAY ============ -->
+  <div class="page-scrim" id="pageScrim" aria-hidden="true"></div>
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+    <div class="container search-overlay-header">
+      <a href="index.html" class="logo" style="color:var(--text-on-dark-1)">
+        <span class="logo-mark logo-mark--on-dark" aria-hidden="true"></span>
+        Golden Retire Memo
+      </a>
+      <nav class="nav">
+        <a href="trading-tools.html">Trading Tools</a>
+        <a href="about.html">About Us</a>
+      </nav>
+      <div class="header-right">
+        <button class="icon-btn" id="searchClose" aria-label="Close search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+        <button class="btn-primary btn-primary--inverted">Subscribe</button>
+      </div>
+    </div>
+    <div class="search-body">
+      <div class="search-input-wrap">
+        <div class="search-field">
+          <input id="searchInput" type="text" placeholder="Search…" autocomplete="off" />
+          <svg class="search-magnifier" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </div>
+        <p class="search-hint">Hit Enter to Search or X to close</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

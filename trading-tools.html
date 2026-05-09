@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trading Tools — Golden Retire Memo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="ticker-viewport">
+      <div class="ticker-track" id="tickerTrack"></div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div class="header-wrap">
+    <header class="container header">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true"></span>
+        Golden Retire Memo
+      </a>
+      <nav class="nav">
+        <a href="trading-tools.html">Trading Tools</a>
+        <a href="about.html">About Us</a>
+      </nav>
+      <div class="header-right">
+        <button class="icon-btn" id="searchOpen" aria-label="Open search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="btn-primary">Subscribe</button>
+      </div>
+    </header>
+  </div>
+
+  <!-- PAGE HERO -->
+  <main class="container">
+    <section class="page-hero">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Reference</a>
+        <span class="crumb-sep">·</span>
+        <span class="crumb-current">Trading Tools</span>
+      </nav>
+      <div class="page-hero-eyebrow eyebrow-rule" style="margin-bottom:24px;">Reference · Stock</div>
+      <h1 class="page-hero-title">Trading <em>tools.</em></h1>
+      <p class="page-hero-lead">A reference list of the platforms, terminals and services traders use to analyze, execute and manage positions in financial markets. Below is an overview of the main categories — from charting and execution platforms to news feeds, risk management, and automated strategy development.</p>
+      <div class="page-hero-meta">
+        <span>30 tools across 10 categories</span>
+        <span>Last reviewed May 2026</span>
+        <span>For reference only — not an endorsement</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- 01 TRADING PLATFORMS -->
+  <section>
+    <div class="container">
+      <div class="numbered-section">
+        <div class="num-col">
+          <span class="section-num">01</span>
+          <h2 class="section-num-title">Trading <em>platforms.</em></h2>
+        </div>
+        <div class="section-content">
+          <div class="tools-list">
+            <div class="tools-row">
+              <span class="tool-domain">metatrader.com</span>
+              <div>
+                <div class="tool-name">MetaTrader 4 / 5</div>
+                <p class="tool-desc">Widely used forex and CFD trading platforms offering advanced charting, multi-asset trading, copy trading, and automated strategies via Expert Advisors.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">tradingview.com</span>
+              <div>
+                <div class="tool-name">TradingView</div>
+                <p class="tool-desc">A leading cloud-based trading platform with advanced charting, broker integrations, AI-powered indicators, and a global trader community.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">schwab.com</span>
+              <div>
+                <div class="tool-name">thinkorswim</div>
+                <p class="tool-desc">A professional trading platform by Charles Schwab supporting stocks, options, futures and forex with advanced analytics, paper trading, and scripting tools.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">ninjatrader.com</span>
+              <div>
+                <div class="tool-name">NinjaTrader</div>
+                <p class="tool-desc">A futures-focused trading platform offering high-performance charting, order flow tools, automated strategies, and broker connectivity.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 CHARTING TOOLS (banded) -->
+  <section class="section-banded">
+    <div class="container">
+      <div class="numbered-section">
+        <div class="num-col">
+          <span class="section-num">02</span>
+          <h2 class="section-num-title">Charting <em>tools.</em></h2>
+        </div>
+        <div class="section-content">
+          <div class="tools-list">
+            <div class="tools-row">
+              <span class="tool-domain">tradingview.com</span>
+              <div>
+                <div class="tool-name">TradingView</div>
+                <p class="tool-desc">Provides multi-asset charting with hundreds of indicators, deep historical data, alerts, and multi-timeframe analysis.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">stockcharts.com</span>
+              <div>
+                <div class="tool-name">StockCharts</div>
+                <p class="tool-desc">Delivers professional technical charts, indicators, scanning tools and market commentary for stocks and ETFs.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">trendspider.com</span>
+              <div>
+                <div class="tool-name">TrendSpider</div>
+                <p class="tool-desc">An AI-driven charting and analysis platform automating trendlines, patterns, Fibonacci levels, and multi-timeframe insights.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 TECHNICAL ANALYSIS -->
+  <section>
+    <div class="container">
+      <div class="numbered-section">
+        <div class="num-col">
+          <span class="section-num">03</span>
+          <h2 class="section-num-title">Technical <em>analysis.</em></h2>
+        </div>
+        <div class="section-content">
+          <div class="tools-list">
+            <div class="tools-row">
+              <span class="tool-domain">metastock.com</span>
+              <div>
+                <div class="tool-name">MetaStock</div>
+                <p class="tool-desc">A desktop-based technical analysis platform offering advanced indicators, system testing, forecasting, and real-time data integration.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">tc2000.com</span>
+              <div>
+                <div class="tool-name">TC2000</div>
+                <p class="tool-desc">High-speed charting and scanning software known for customizable indicators, real-time alerts, and stock filtering.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">tradingview.com</span>
+              <div>
+                <div class="tool-name">TradingView Pine Script</div>
+                <p class="tool-desc">A scripting environment within TradingView used to build custom indicators, alerts, and backtest trading strategies.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 FUNDAMENTAL ANALYSIS (banded) -->
+  <section class="section-banded">
+    <div class="container">
+      <div class="numbered-section">
+        <div class="num-col">
+          <span class="section-num">04</span>
+          <h2 class="section-num-title">Fundamental <em>analysis.</em></h2>
+        </div>
+        <div class="section-content">
+          <div class="tools-list">
+            <div class="tools-row">
+              <span class="tool-domain">bloomberg.com</span>
+              <div>
+                <div class="tool-name">Bloomberg Terminal</div>
+                <p class="tool-desc">An institutional-grade platform providing real-time financial data, news, analytics, and AI-powered market intelligence.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">morningstar.com</span>
+              <div>
+                <div class="tool-name">Morningstar</div>
+                <p class="tool-desc">Offers deep fundamental research, portfolio analytics, fund ratings, and long-term investment insights.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">finviz.com</span>
+              <div>
+                <div class="tool-name">Finviz</div>
+                <p class="tool-desc">A popular market visualization and stock screening tool offering real-time filters, fundamentals, technicals, and heat maps.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 NEWS & DATA FEEDS -->
+  <section>
+    <div class="container">
+      <div class="numbered-section">
+        <div class="num-col">
+          <span class="section-num">05</span>
+          <h2 class="section-num-title">News &amp; <em>data feeds.</em></h2>
+        </div>
+        <div class="section-content">
+          <div class="tools-list">
+            <div class="tools-row">
+              <span class="tool-domain">refinitiv.com</span>
+              <div>
+                <div class="tool-name">Refinitiv Workspace</div>
+                <p class="tool-desc">A professional financial data and news platform delivering real-time global market coverage and analytics.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">benzinga.com</span>
+              <div>
+                <div class="tool-name">Benzinga Pro</div>
+                <p class="tool-desc">A real-time news and alerts platform designed for active traders, including earnings, macro, and unusual activity tracking.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">marketwatch.com</span>
+              <div>
+                <div class="tool-name">MarketWatch</div>
+                <p class="tool-desc">A mainstream financial news platform covering markets, earnings, economic data, and investing trends.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 RISK MANAGEMENT (banded) -->
+  <section class="section-banded">
+    <div class="container">
+      <div class="numbered-section">
+        <div class="num-col">
+          <span class="section-num">06</span>
+          <h2 class="section-num-title">Risk <em>management.</em></h2>
+        </div>
+        <div class="section-content">
+          <div class="tools-list">
+            <div class="tools-row">
+              <span class="tool-domain">interactivebrokers.com</span>
+              <div>
+                <div class="tool-name">IBKR Risk Navigator</div>
+                <p class="tool-desc">A portfolio risk analysis tool providing stress testing, scenario modeling, and margin impact analysis.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">myfxbook.com</span>
+              <div>
+                <div class="tool-name">Position Size Calculator</div>
+                <p class="tool-desc">A practical risk management tool used by traders to calculate trade size based on account risk and stop-loss distance.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">edgewonk.com</span>
+              <div>
+                <div class="tool-name">Edgewonk</div>
+                <p class="tool-desc">A professional trading journal and analytics platform focused on performance tracking and risk control.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 BACKTESTING & STRATEGY -->
+  <section>
+    <div class="container">
+      <div class="numbered-section">
+        <div class="num-col">
+          <span class="section-num">07</span>
+          <h2 class="section-num-title">Backtesting &amp; <em>strategy.</em></h2>
+        </div>
+        <div class="section-content">
+          <div class="tools-list">
+            <div class="tools-row">
+              <span class="tool-domain">quantconnect.com</span>
+              <div>
+                <div class="tool-name">QuantConnect</div>
+                <p class="tool-desc">A cloud-based algorithmic trading platform supporting multi-asset backtesting, live deployment, and institutional data.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">amibroker.com</span>
+              <div>
+                <div class="tool-name">Amibroker</div>
+                <p class="tool-desc">A powerful desktop tool for advanced technical analysis, backtesting, and automated trading system development.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">backtrader.com</span>
+              <div>
+                <div class="tool-name">Backtrader</div>
+                <p class="tool-desc">An open-source Python framework for backtesting and developing algorithmic trading strategies.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 AUTOMATED TRADING (banded) -->
+  <section class="section-banded">
+    <div class="container">
+      <div class="numbered-section">
+        <div class="num-col">
+          <span class="section-num">08</span>
+          <h2 class="section-num-title">Automated <em>trading.</em></h2>
+        </div>
+        <div class="section-content">
+          <div class="tools-list">
+            <div class="tools-row">
+              <span class="tool-domain">metatrader.com</span>
+              <div>
+                <div class="tool-name">MetaTrader Expert Advisors</div>
+                <p class="tool-desc">Automated trading programs for MT4 / MT5 that execute trades based on predefined algorithmic rules.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">quantconnect.com</span>
+              <div>
+                <div class="tool-name">QuantConnect Live Trading</div>
+                <p class="tool-desc">Enables fully automated execution of algorithmic strategies across equities, forex, futures, crypto and options.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">tradestation.com</span>
+              <div>
+                <div class="tool-name">TradeStation</div>
+                <p class="tool-desc">A professional trading platform offering automation, EasyLanguage scripting, and high-quality trade execution.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 PORTFOLIO MANAGEMENT -->
+  <section>
+    <div class="container">
+      <div class="numbered-section">
+        <div class="num-col">
+          <span class="section-num">09</span>
+          <h2 class="section-num-title">Portfolio <em>management.</em></h2>
+        </div>
+        <div class="section-content">
+          <div class="tools-list">
+            <div class="tools-row">
+              <span class="tool-domain">empower.com</span>
+              <div>
+                <div class="tool-name">Empower (Personal Capital)</div>
+                <p class="tool-desc">A digital wealth platform for portfolio tracking, asset allocation analysis, retirement planning, and net-worth monitoring.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">quicken.com</span>
+              <div>
+                <div class="tool-name">Quicken</div>
+                <p class="tool-desc">Personal finance software for budgeting, investment tracking, cash-flow analysis, and financial planning.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">sharesight.com</span>
+              <div>
+                <div class="tool-name">Sharesight</div>
+                <p class="tool-desc">An investment tracking platform for performance reporting, dividends, and tax-related insights.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 SOCIAL TRADING (banded) -->
+  <section class="section-banded">
+    <div class="container">
+      <div class="numbered-section">
+        <div class="num-col">
+          <span class="section-num">10</span>
+          <h2 class="section-num-title">Social <em>trading.</em></h2>
+        </div>
+        <div class="section-content">
+          <div class="tools-list">
+            <div class="tools-row">
+              <span class="tool-domain">etoro.com</span>
+              <div>
+                <div class="tool-name">eToro</div>
+                <p class="tool-desc">A global social trading platform allowing users to trade and copy top-performing investors across multiple asset classes.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">zulutrade.com</span>
+              <div>
+                <div class="tool-name">ZuluTrade</div>
+                <p class="tool-desc">A copy trading platform connecting strategy providers with investors across forex and CFD markets.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="tools-row">
+              <span class="tool-domain">stocktwits.com</span>
+              <div>
+                <div class="tool-name">StockTwits</div>
+                <p class="tool-desc">A real-time social network for traders and investors to share ideas, sentiment, and market commentary.</p>
+              </div>
+              <a href="#" class="btn-outline">Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A NOTE ON THIS LIST -->
+  <main class="container">
+    <section class="section">
+      <div class="dark-callout dark-callout--note">
+        <span class="dark-callout-label">A note on<br/>this list.</span>
+        <div class="dark-callout-content" style="font-family:var(--font-body); font-size:14px; line-height:1.65; color:var(--text-on-dark-2);">
+          Golden Retire Memo is an independent publisher and is not a registered investment adviser, broker-dealer, or financial institution. The platforms and services listed above are referenced for informational purposes; their inclusion is not an endorsement, recommendation, or solicitation to use any product. Some links may be affiliate links — see our <a href="#" style="color:var(--text-on-dark-1); text-decoration:underline; text-underline-offset:2px;">Disclaimer</a> for details. You should evaluate any trading or investment tool against your own objectives, risk tolerance, and applicable regulations before use.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <div class="site-footer">
+      <div class="footer-cta">
+        <div>
+          <div class="footer-eyebrow">The Morning Memo</div>
+          <h2 class="footer-headline">Stay informed on the <em>digital assets</em> that move.</h2>
+        </div>
+        <div class="footer-form-block">
+          <div class="input-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" />
+            <button class="btn-primary" disabled aria-disabled="true">Subscribe</button>
+          </div>
+          <label class="footer-form-checkbox">
+            <input type="checkbox" />
+            <span>I agree to receive newsletters and promotional emails from Golden Retire Memo. I have read and accept the <a href="#">Privacy Policy</a>.</span>
+          </label>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <a href="index.html" class="footer-mark-row">
+          <span class="logo-mark logo-mark--on-dark" aria-hidden="true"></span>
+          Golden Retire Memo
+        </a>
+        <ul class="footer-legal-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trading-tools.html">Trading Tools</a></li>
+        </ul>
+        <span class="footer-copyright">© 2026 GoldenRetireMemo.com — operated by TerraTrance Technologies, LLC. All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIM + SEARCH OVERLAY -->
+  <div class="page-scrim" id="pageScrim" aria-hidden="true"></div>
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+    <div class="container search-overlay-header">
+      <a href="index.html" class="logo" style="color:var(--text-on-dark-1)">
+        <span class="logo-mark logo-mark--on-dark" aria-hidden="true"></span>
+        Golden Retire Memo
+      </a>
+      <nav class="nav">
+        <a href="trading-tools.html">Trading Tools</a>
+        <a href="about.html">About Us</a>
+      </nav>
+      <div class="header-right">
+        <button class="icon-btn" id="searchClose" aria-label="Close search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+        <button class="btn-primary btn-primary--inverted">Subscribe</button>
+      </div>
+    </div>
+    <div class="search-body">
+      <div class="search-input-wrap">
+        <div class="search-field">
+          <input id="searchInput" type="text" placeholder="Search…" autocomplete="off" />
+          <svg class="search-magnifier" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </div>
+        <p class="search-hint">Hit Enter to Search or X to close</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
