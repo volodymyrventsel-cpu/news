@@ -775,6 +775,60 @@ section.section { margin-top: var(--section); }
 .section-content { font-size: 14px; line-height: 1.7; color: var(--text-primary); }
 .section-content p + p { margin-top: 16px; }
 
+/* Long-form legal content (Privacy, Terms, Disclaimer) extensions */
+.section-content h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+.section-content > h3:first-child { margin-top: 0; }
+.section-content ul {
+  list-style: none;
+  padding-left: 24px;
+  margin-top: 16px;
+}
+.section-content ul + p,
+.section-content p + ul { margin-top: 16px; }
+.section-content ul li { position: relative; }
+.section-content ul li + li { margin-top: 12px; }
+.section-content ul li::before {
+  content: '';
+  position: absolute;
+  left: -16px;
+  top: 11px;
+  width: 4px;
+  height: 4px;
+  border-radius: var(--r-pill);
+  background: var(--text-muted);
+}
+.section-content a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: inherit;
+  transition: color var(--d) var(--ease);
+}
+.section-content a:hover { color: var(--text-secondary); }
+.section-content strong { font-weight: 600; }
+.section-content em { font-style: italic; }
+.section-content .legalese {
+  /* "GOLDEN RETIRE MEMO DOES NOT…" — paragraphs in legal all-caps emphasis */
+  letter-spacing: 0.01em;
+  line-height: 1.65;
+}
+
+/* Sticky left column for long-form pages */
+.numbered-section { align-items: start; }
+@media (min-width: 1025px) {
+  .num-col {
+    position: sticky;
+    top: 24px;
+  }
+}
+
 /* =============================================================
    SUBCATEGORY GRID ("What we cover" 2x2 in About)
 ============================================================= */
